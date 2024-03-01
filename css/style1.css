@@ -1,0 +1,33 @@
+.navbar .container-fluid .d-flex {
+  background-color: white;
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.navbar .container-fluid .d-flex .search {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.navbar .container-fluid .d-flex .btn {
+  border-radius: 20px;
+  border: none;
+}
+
+.navbar .container-fluid .collapse .navbar-nav {
+  display: flex;
+  gap: 13px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar .container-fluid .collapse .navbar-nav {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .navbar .container-fluid .collapse .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+}

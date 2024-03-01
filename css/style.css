@@ -1,0 +1,211 @@
+
+/* Base styles */
+.horizontal-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #763f58, #ffcc33);
+    text-align: center;
+}
+
+.horizontal-text img {
+    max-width: 100%;
+    height: auto; /* Let the browser calculate height to maintain aspect ratio */
+    margin-left: 10px; /* Adjusted for better spacing on smaller screens */
+}
+
+.horizontal-text p {
+    flex: 1;
+    margin: 0; /* Remove default margin */
+    color: white;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .horizontal-text {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .horizontal-text img {
+        margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
+    }
+
+    .horizontal-text p {
+        margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
+    }
+}
+
+.carousel-item {
+    position: relative; /* Ensure that the carousel item serves as the positioning context for the absolute positioning of .searchengine */
+}
+
+/* Base styles */
+.searchengine {
+    position: absolute;
+    top: 230px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    width: 70%; /* Set width to 100% for responsiveness */
+}
+
+
+.search-container input[type="search"] {
+    padding-right: 40px;
+    width: 100%;
+    max-width: 450px;
+    
+}
+
+.search-container button[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: yellow;
+}
+
+.image-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1024px) {
+    .searchengine {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 180px;
+    }
+
+    .search-container input[type="search"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .searchengine {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .searchengine {
+        width: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 120px;
+    }
+}
+
+
+.card {
+    flex: 0 0 auto; /* Allow the cards to grow or shrink as needed */
+    width: 300px; /* Set a fixed width for the cards */
+    margin: 0 10px; /* Add some space between cards */
+}
+
+
+ .container .myContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .container .myContent .eschoolContent{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border-bottom: 5px solid grey;
+    padding: 10px;
+ }
+ .eschoolContent button[type="submit"] {
+    background-color: whitesmoke;
+    width: 100px; 
+    height: 50px;
+    color: green; 
+    border-color: blue;
+    border-radius: 10px;
+    
+}
+
+.demoCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.cardContent-head{
+    margin-left: 15px;
+}
+.demoCard .cardContent{
+    width: 31%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+height: 400px;
+}
+.demoCard .cardContent .cardImg:hover {
+    background-color: rgb(152, 150, 150);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.demoCard .cardContent .cardImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.demoCard .cardContent .cardImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+.cardContent-footer{
+   align-items: end;
+    padding-right: 20px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    gap: 4px;
+}
+
+@media (max-width: 768px) {
+    .container .myContent .eschoolContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .demoCard {
+        flex-direction: column; /* Change to column layout */
+        gap: 20px; /* Add space between cards */
+    }
+
+    .demoCard .cardContent {
+        width: 100%;
+    }
+}
+
+

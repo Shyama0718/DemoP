@@ -1,0 +1,80 @@
+.firstcontainer{
+    background-color: red;
+    height: 120px;
+    
+}
+.firstcontainer .span1{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    gap: 10px;
+    padding-left: 30px;
+}
+.firstcontainer h1{
+    padding-left: 30px;
+}
+
+
+/* form*/
+.secondcontainer{
+    margin-top:  20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.smallcontainer{
+    width: 50%;
+    border: 4px solid yellow;
+}
+.user-name{
+    display: flex;
+ 
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+.firstname{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+.firstname input[type="text"]
+{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+   
+}
+.state{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 20px;
+ 
+}
+.email input[type="email"]
+{
+    width: 100%;
+    outline: none;
+    height: 70%;
+}
+.password{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 20px;
+
+}

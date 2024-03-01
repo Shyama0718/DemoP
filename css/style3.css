@@ -1,0 +1,8 @@
+.container .myContent{
+    display: flex;
+    background-color: red;
+    color: red;
+}
+.body{
+    background-color: red;
+}
