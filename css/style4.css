@@ -25,12 +25,14 @@
 .smallcontainer{
     width: 50%;
     border: 4px solid yellow;
+   
 }
 .user-name{
     display: flex;
- 
     justify-content: space-evenly;
     width: 100%;
+    padding-top: 8px;
+    gap: 5px;
     
 }
 .firstname{
@@ -47,11 +49,50 @@
     padding: 5px;
     outline: none;
 }
+.fname{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.lname{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.statechoose
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.mobile{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.gmail{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.security
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
 .contact{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-   
+    padding-top: 8px;
+    gap: 5px;
 }
 .state{
     width: 45%;
@@ -60,9 +101,10 @@
 }
 .email{
     display: flex;
-    width: 100%;
+    width: 97%;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 21px;
+    padding-top: 8px;
  
 }
 .email input[type="email"]
@@ -73,8 +115,30 @@
 }
 .password{
     display: flex;
-    width: 100%;
+    width: 97%;
     flex-direction: column;
     padding-left: 20px;
-
+    padding-top: 8px;
+}
+.submit{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    border-top: 2px solid green;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+.submit input[type="submit"]{
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.formhead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid black;
 }

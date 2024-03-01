@@ -20,23 +20,27 @@ include 'partials/_header.php'; // Include the header file
 
 <div class="secondcontainer">
     <div class="smallcontainer">
-
+<div class="formhead">
     <h2>Registration Form</h2>
     <h5>Sign up and start learning.</h5>
+    </div>
     <form action="#" method="post">
         <div class="user-name">
+
         <div class="firstname">
-        <label for="fname">First Name:</label>
+            
+        <div class="fname"> <img src="img/profile.png" width="20px" height="20px">First Name:</div>
+       
         <input type="text" id="fname" name="fname" required>
         </div>
             <div class="firstname">
-        <label for="lname">Last Name:</label>
+        <div class="lname"><img src="img/profile.png" width="20px" height="20px">Last Name:</div>
         <input type="text" id="lname" name="lname" required>
         </div>
         </div>
             <div class="contact">
                 <div class="state">
-        <label for="state">Select State:</label>
+        <div class="statechoose"><img src="img/location.png" width="20px" height="20px">Select State:</div>
 <select id="state" name="state">
     <option value="" selected>Select One</option>
     <option value="state1">Odisha</option>
@@ -46,19 +50,21 @@ include 'partials/_header.php'; // Include the header file
 </select>
 </div>
             <div class="state">
-        <label for="mobile">Mobile Number:</label>
+        <div class="mobile"><img src="img/number.png" width="20px" height="20px">Mobile Number:</div>
         <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
         </div>
         </div>
         <div class="email">
-        <label for="email">Email:</label>
+        <div class="gmail"><img src="img/email.png" width="20px" height="20px">Email:</div>
         <input type="email" id="email" name="email" required>
         </div>
             <div class="password">
-        <label for="password">Password:</label>
+        <div class="security"><img src="img/password.png" width="20px" height="20px">Password:</div>
         <input type="password" id="password" name="password" required>
         </div>
-        <input type="submit" value="Submit">
+        <div class="submit">
+        <input type="submit" value="Signup">
+        </div>
     </form>
   
     </div>
