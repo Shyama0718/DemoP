@@ -50,15 +50,13 @@ echo ' <!DOCTYPE html>
       </li>
     
     </ul>
-    <a href="login.php" class="btn btn-primary mx-2" id="loginBtn">LOGIN</a>
     
-    <a href="signup.php" class="btn btn-primary mx-2" id="signupBtn">SIGN UP</a>
+    
+    <a href="logout.php" class="btn btn-primary mx-2" id="logoutBtn">LOGOUT</a
   </div>
 </div>
 </nav>';
 echo '</body>
 </html>';
-
-// Include JavaScript file
 
 ?>

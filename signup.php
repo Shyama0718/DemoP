@@ -1,5 +1,22 @@
 <?php
 include 'partials/_header.php'; // Include the header file
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+
+include 'partials/dbconnect.php';
+$fname=$_POST["fname"];
+$lname=$_POST["lname"];
+$state=$_POST["state"];
+$mobile=$_POST["mobile"];
+$email=$_POST["email"];
+$password=$_POST["password"];
+$sql = "INSERT INTO users (fname, lname, state, mobile, email, password) VALUES ('$fname', '$lname', '$state', '$mobile', '$email', '$password')";
+$result=mysqli_query($conn,$sql);
+
+
+header("Location: home.php");
+exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +41,7 @@ include 'partials/_header.php'; // Include the header file
     <h2>Registration Form</h2>
     <h5>Sign up and start learning.</h5>
     </div>
-    <form action="#" method="post">
+    <form action="/demop/signup.php" method="post">
         <div class="user-name">
 
         <div class="firstname">
@@ -43,9 +60,9 @@ include 'partials/_header.php'; // Include the header file
         <div class="statechoose"><img src="img/location.png" width="20px" height="20px">Select State:</div>
 <select id="state" name="state">
     <option value="" selected>Select One</option>
-    <option value="state1">Odisha</option>
-    <option value="state2">UtterPradesh</option>
-    <option value="state3">Tamilnadu</option>
+    <option value="odisha">Odisha</option>
+    <option value="utterpradesh">UtterPradesh</option>
+    <option value="tamilnadu">Tamilnadu</option>
     <!-- Add more options as needed -->
 </select>
 </div>
